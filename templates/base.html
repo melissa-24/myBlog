@@ -1,31 +1,23 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href='../css/core.css' />
+        <link rel="stylesheet" type='text/css' href="{% static 'css/core.css' %}" />
         <title>A Web Developers Journey</title>
-        <!-- <style>
-            body {
-                background-color: blue;
-            }
-        </style> -->
     </head>
     <body>
         <!-- Navigation -->
-        <nav>
+        <header>
             <div>
                 <h1>A Web Developers Journey</h1>
-                <div>
-                    <ul>
-                        <li>
-                            <a href="{% url 'home' %}">Home</a>
-                        </li>
-                    </ul>
-                </div>
+                <h3>A blog about my journey as a web developer</h3>
+                <nav>
+                    <a href="{% url 'posts' %}">Posts</a>
+                </nav>
             </div>
-        </nav>
+        </header>
         {% block content %}
         <!-- Content Goes here -->
         {% endblock content %}

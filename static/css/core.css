@@ -1,0 +1,67 @@
+.flexrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.flexcolumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  background-color: #fab140;
+  font-family: Oswald, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+body header h1 {
+  font-size: 2em;
+}
+body header h3 {
+  font-size: 1.2em;
+}
+body header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+}
+body .container .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+body .container .row .left {
+  width: 600px;
+  margin: 1em;
+}
+body .container .row .left .card {
+  box-shadow: 0 16px 48px #46361e;
+}
+body .container .row .right {
+  width: 100px;
+  margin: 1em;
+}
+body .container .row .right .card {
+  box-shadow: 0 16px 48px #E3E7EB;
+}
