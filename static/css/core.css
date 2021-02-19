@@ -62,6 +62,3 @@ body .container .row .right {
   width: 100px;
   margin: 1em;
 }
-body .container .row .right .card {
-  box-shadow: 0 16px 48px #E3E7EB;
-}
